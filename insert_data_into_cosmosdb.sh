@@ -1,87 +1,295 @@
-db.product.insert({
-    "ProductID": "712",
-    "Name": "AWC Logo Cap",
-    "ProductNumber": "CA-1098",
-    "Color": "Multi",
-    "StandardCost": "6.9223",
-    "ListPrice": "8.9900",
-    "ProductCategoryID": "23"
-})
-
-db.product.insert({
-    "ProductID": "715",
-    "Name": "Long-Sleeve Logo Jersey, L",
-    "ProductNumber": "LJ-0192-L",
-    "Color": "Multi",
-    "StandardCost": "38.4923",
-    "ListPrice": "49.9900",
-    "ProductCategoryID": "25"
-})
-
-db.product.insert({
-    "ProductID": "864",
-    "Name": "Classic Vest, S",
-    "ProductNumber": "VE-C304-S",
-    "Color": "Blue",
-    "StandardCost": "23.7490",
-    "ListPrice": "63.5000",
-    "ProductCategoryID": "29"
-})
-
-db.product.insert({
-    "ProductID": "870",
-    "Name": "Water Bottle - 30 oz.",
-    "ProductNumber": "WB-H098",
-    "StandardCost": "1.8663",
-    "ListPrice": "4.9900",
-    "ProductCategoryID": "32"
-})
-
-db.product.insert({
-    "ProductID": "876",
-    "Name": "Hitch Rack - 4-Bike",
-    "ProductNumber": "RA-H123",
-    "StandardCost": "44.8800",
-    "ListPrice": "120.0000",
-    "ProductCategoryID": "30"
-})
-
-db.product.insert({
-    "ProductID": "880",
-    "Name": "Hydration Pack - 70 oz.",
-    "ProductNumber": "HY-1023-70",
-    "Color": "Silver",
-    "StandardCost": "20.5663",
-    "ListPrice": "54.9900",
-    "ProductCategoryID": "36"
-})
-
-db.product.insert({
-    "ProductID": "883",
-    "Name": "Short-Sleeve Classic Jersey, L",
-    "ProductNumber": "SJ-0194-L",
-    "Color": "Yellow",
-    "StandardCost": "41.5723",
-    "ListPrice": "53.9900",
-    "ProductCategoryID": "32"
-})
-
-db.product.insert({
-    "ProductID": "884",
-    "Name": "Short-Sleeve Classic Jersey, XL",
-    "ProductNumber": "SJ-0194-X",
-    "Color": "Yellow",
-    "StandardCost": "41.5723",
-    "ListPrice": "53.9900",
-    "ProductCategoryID": "32"
-})
-
-db.product.insert({
-    "ProductID": "938",
-    "Name": "LL Road Pedal",
-    "ProductNumber": "PD-R347",
-    "Color": "Silver/Black",
-    "StandardCost": "17.9776",
-    "ListPrice": "40.4900",
-    "ProductCategoryID": "68"
-})
+db.product.insert({ "ProductID":"680", "Name":"HL Road Frame - Black, 58","ProductNumber":"FR-R92B-58","Color":"Black","StandardCost":"1059.31","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"706", "Name":"HL Road Frame - Red, 58","ProductNumber":"FR-R92R-58","Color":"Red","StandardCost":"1059.31","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"707", "Name":"Sport-100 Helmet, Red","ProductNumber":"HL-U509-R","Color":"Red","StandardCost":"13.09","ListPrice":"34.99","ProductCategoryID":"35"})
+db.product.insert({ "ProductID":"708", "Name":"Sport-100 Helmet, Black","ProductNumber":"HL-U509","Color":"Black","StandardCost":"13.09","ListPrice":"34.99","ProductCategoryID":"35"})
+db.product.insert({ "ProductID":"709", "Name":"Mountain Bike Socks, M","ProductNumber":"SO-B909-M","Color":"White","StandardCost":"3.40","ListPrice":"9.50","ProductCategoryID":"27"})
+db.product.insert({ "ProductID":"710", "Name":"Mountain Bike Socks, L","ProductNumber":"SO-B909-L","Color":"White","StandardCost":"3.40","ListPrice":"9.50","ProductCategoryID":"27"})
+db.product.insert({ "ProductID":"711", "Name":"Sport-100 Helmet, Blue","ProductNumber":"HL-U509-B","Color":"Blue","StandardCost":"13.09","ListPrice":"34.99","ProductCategoryID":"35"})
+db.product.insert({ "ProductID":"712", "Name":"AWC Logo Cap","ProductNumber":"CA-1098","Color":"Multi","StandardCost":"6.92","ListPrice":"8.99","ProductCategoryID":"23"})
+db.product.insert({ "ProductID":"713", "Name":"Long-Sleeve Logo Jersey, S","ProductNumber":"LJ-0192-S","Color":"Multi","StandardCost":"38.49","ListPrice":"49.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"714", "Name":"Long-Sleeve Logo Jersey, M","ProductNumber":"LJ-0192-M","Color":"Multi","StandardCost":"38.49","ListPrice":"49.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"715", "Name":"Long-Sleeve Logo Jersey, L","ProductNumber":"LJ-0192-L","Color":"Multi","StandardCost":"38.49","ListPrice":"49.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"716", "Name":"Long-Sleeve Logo Jersey, XL","ProductNumber":"LJ-0192-X","Color":"Multi","StandardCost":"38.49","ListPrice":"49.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"717", "Name":"HL Road Frame - Red, 62","ProductNumber":"FR-R92R-62","Color":"Red","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"718", "Name":"HL Road Frame - Red, 44","ProductNumber":"FR-R92R-44","Color":"Red","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"719", "Name":"HL Road Frame - Red, 48","ProductNumber":"FR-R92R-48","Color":"Red","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"720", "Name":"HL Road Frame - Red, 52","ProductNumber":"FR-R92R-52","Color":"Red","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"721", "Name":"HL Road Frame - Red, 56","ProductNumber":"FR-R92R-56","Color":"Red","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"722", "Name":"LL Road Frame - Black, 58","ProductNumber":"FR-R38B-58","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"723", "Name":"LL Road Frame - Black, 60","ProductNumber":"FR-R38B-60","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"724", "Name":"LL Road Frame - Black, 62","ProductNumber":"FR-R38B-62","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"725", "Name":"LL Road Frame - Red, 44","ProductNumber":"FR-R38R-44","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"726", "Name":"LL Road Frame - Red, 48","ProductNumber":"FR-R38R-48","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"727", "Name":"LL Road Frame - Red, 52","ProductNumber":"FR-R38R-52","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"728", "Name":"LL Road Frame - Red, 58","ProductNumber":"FR-R38R-58","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"729", "Name":"LL Road Frame - Red, 60","ProductNumber":"FR-R38R-60","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"730", "Name":"LL Road Frame - Red, 62","ProductNumber":"FR-R38R-62","Color":"Red","StandardCost":"187.16","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"731", "Name":"ML Road Frame - Red, 44","ProductNumber":"FR-R72R-44","Color":"Red","StandardCost":"352.14","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"732", "Name":"ML Road Frame - Red, 48","ProductNumber":"FR-R72R-48","Color":"Red","StandardCost":"352.14","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"733", "Name":"ML Road Frame - Red, 52","ProductNumber":"FR-R72R-52","Color":"Red","StandardCost":"352.14","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"734", "Name":"ML Road Frame - Red, 58","ProductNumber":"FR-R72R-58","Color":"Red","StandardCost":"352.14","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"735", "Name":"ML Road Frame - Red, 60","ProductNumber":"FR-R72R-60","Color":"Red","StandardCost":"352.14","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"736", "Name":"LL Road Frame - Black, 44","ProductNumber":"FR-R38B-44","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"737", "Name":"LL Road Frame - Black, 48","ProductNumber":"FR-R38B-48","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"738", "Name":"LL Road Frame - Black, 52","ProductNumber":"FR-R38B-52","Color":"Black","StandardCost":"204.63","ListPrice":"337.22","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"739", "Name":"HL Mountain Frame - Silver, 42","ProductNumber":"FR-M94S-42","Color":"Silver","StandardCost":"747.20","ListPrice":"1364.50","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"740", "Name":"HL Mountain Frame - Silver, 44","ProductNumber":"FR-M94S-44","Color":"Silver","StandardCost":"706.81","ListPrice":"1364.50","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"741", "Name":"HL Mountain Frame - Silver, 48","ProductNumber":"FR-M94S-52","Color":"Silver","StandardCost":"706.81","ListPrice":"1364.50","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"742", "Name":"HL Mountain Frame - Silver, 46","ProductNumber":"FR-M94S-46","Color":"Silver","StandardCost":"747.20","ListPrice":"1364.50","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"743", "Name":"HL Mountain Frame - Black, 42","ProductNumber":"FR-M94B-42","Color":"Black","StandardCost":"739.04","ListPrice":"1349.60","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"744", "Name":"HL Mountain Frame - Black, 44","ProductNumber":"FR-M94B-44","Color":"Black","StandardCost":"699.09","ListPrice":"1349.60","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"745", "Name":"HL Mountain Frame - Black, 48","ProductNumber":"FR-M94B-48","Color":"Black","StandardCost":"699.09","ListPrice":"1349.60","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"746", "Name":"HL Mountain Frame - Black, 46","ProductNumber":"FR-M94B-46","Color":"Black","StandardCost":"739.04","ListPrice":"1349.60","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"747", "Name":"HL Mountain Frame - Black, 38","ProductNumber":"FR-M94B-38","Color":"Black","StandardCost":"739.04","ListPrice":"1349.60","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"748", "Name":"HL Mountain Frame - Silver, 38","ProductNumber":"FR-M94S-38","Color":"Silver","StandardCost":"747.20","ListPrice":"1364.50","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"749", "Name":"Road-150 Red, 62","ProductNumber":"BK-R93R-62","Color":"Red","StandardCost":"2171.29","ListPrice":"3578.27","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"750", "Name":"Road-150 Red, 44","ProductNumber":"BK-R93R-44","Color":"Red","StandardCost":"2171.29","ListPrice":"3578.27","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"751", "Name":"Road-150 Red, 48","ProductNumber":"BK-R93R-48","Color":"Red","StandardCost":"2171.29","ListPrice":"3578.27","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"752", "Name":"Road-150 Red, 52","ProductNumber":"BK-R93R-52","Color":"Red","StandardCost":"2171.29","ListPrice":"3578.27","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"753", "Name":"Road-150 Red, 56","ProductNumber":"BK-R93R-56","Color":"Red","StandardCost":"2171.29","ListPrice":"3578.27","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"754", "Name":"Road-450 Red, 58","ProductNumber":"BK-R68R-58","Color":"Red","StandardCost":"884.71","ListPrice":"1457.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"755", "Name":"Road-450 Red, 60","ProductNumber":"BK-R68R-60","Color":"Red","StandardCost":"884.71","ListPrice":"1457.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"756", "Name":"Road-450 Red, 44","ProductNumber":"BK-R68R-44","Color":"Red","StandardCost":"884.71","ListPrice":"1457.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"757", "Name":"Road-450 Red, 48","ProductNumber":"BK-R68R-48","Color":"Red","StandardCost":"884.71","ListPrice":"1457.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"758", "Name":"Road-450 Red, 52","ProductNumber":"BK-R68R-52","Color":"Red","StandardCost":"884.71","ListPrice":"1457.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"759", "Name":"Road-650 Red, 58","ProductNumber":"BK-R50R-58","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"760", "Name":"Road-650 Red, 60","ProductNumber":"BK-R50R-60","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"761", "Name":"Road-650 Red, 62","ProductNumber":"BK-R50R-62","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"762", "Name":"Road-650 Red, 44","ProductNumber":"BK-R50R-44","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"763", "Name":"Road-650 Red, 48","ProductNumber":"BK-R50R-48","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"764", "Name":"Road-650 Red, 52","ProductNumber":"BK-R50R-52","Color":"Red","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"765", "Name":"Road-650 Black, 58","ProductNumber":"BK-R50B-58","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"766", "Name":"Road-650 Black, 60","ProductNumber":"BK-R50B-60","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"767", "Name":"Road-650 Black, 62","ProductNumber":"BK-R50B-62","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"768", "Name":"Road-650 Black, 44","ProductNumber":"BK-R50B-44","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"769", "Name":"Road-650 Black, 48","ProductNumber":"BK-R50B-48","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"770", "Name":"Road-650 Black, 52","ProductNumber":"BK-R50B-52","Color":"Black","StandardCost":"486.71","ListPrice":"782.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"771", "Name":"Mountain-100 Silver, 38","ProductNumber":"BK-M82S-38","Color":"Silver","StandardCost":"1912.15","ListPrice":"3399.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"772", "Name":"Mountain-100 Silver, 42","ProductNumber":"BK-M82S-42","Color":"Silver","StandardCost":"1912.15","ListPrice":"3399.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"773", "Name":"Mountain-100 Silver, 44","ProductNumber":"BK-M82S-44","Color":"Silver","StandardCost":"1912.15","ListPrice":"3399.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"774", "Name":"Mountain-100 Silver, 48","ProductNumber":"BK-M82S-48","Color":"Silver","StandardCost":"1912.15","ListPrice":"3399.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"775", "Name":"Mountain-100 Black, 38","ProductNumber":"BK-M82B-38","Color":"Black","StandardCost":"1898.09","ListPrice":"3374.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"776", "Name":"Mountain-100 Black, 42","ProductNumber":"BK-M82B-42","Color":"Black","StandardCost":"1898.09","ListPrice":"3374.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"777", "Name":"Mountain-100 Black, 44","ProductNumber":"BK-M82B-44","Color":"Black","StandardCost":"1898.09","ListPrice":"3374.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"778", "Name":"Mountain-100 Black, 48","ProductNumber":"BK-M82B-48","Color":"Black","StandardCost":"1898.09","ListPrice":"3374.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"779", "Name":"Mountain-200 Silver, 38","ProductNumber":"BK-M68S-38","Color":"Silver","StandardCost":"1265.62","ListPrice":"2319.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"780", "Name":"Mountain-200 Silver, 42","ProductNumber":"BK-M68S-42","Color":"Silver","StandardCost":"1265.62","ListPrice":"2319.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"781", "Name":"Mountain-200 Silver, 46","ProductNumber":"BK-M68S-46","Color":"Silver","StandardCost":"1265.62","ListPrice":"2319.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"782", "Name":"Mountain-200 Black, 38","ProductNumber":"BK-M68B-38","Color":"Black","StandardCost":"1251.98","ListPrice":"2294.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"783", "Name":"Mountain-200 Black, 42","ProductNumber":"BK-M68B-42","Color":"Black","StandardCost":"1251.98","ListPrice":"2294.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"784", "Name":"Mountain-200 Black, 46","ProductNumber":"BK-M68B-46","Color":"Black","StandardCost":"1251.98","ListPrice":"2294.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"785", "Name":"Mountain-300 Black, 38","ProductNumber":"BK-M47B-38","Color":"Black","StandardCost":"598.44","ListPrice":"1079.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"786", "Name":"Mountain-300 Black, 40","ProductNumber":"BK-M47B-40","Color":"Black","StandardCost":"598.44","ListPrice":"1079.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"787", "Name":"Mountain-300 Black, 44","ProductNumber":"BK-M47B-44","Color":"Black","StandardCost":"598.44","ListPrice":"1079.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"788", "Name":"Mountain-300 Black, 48","ProductNumber":"BK-M47B-48","Color":"Black","StandardCost":"598.44","ListPrice":"1079.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"789", "Name":"Road-250 Red, 44","ProductNumber":"BK-R89R-44","Color":"Red","StandardCost":"1518.79","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"790", "Name":"Road-250 Red, 48","ProductNumber":"BK-R89R-48","Color":"Red","StandardCost":"1518.79","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"791", "Name":"Road-250 Red, 52","ProductNumber":"BK-R89R-52","Color":"Red","StandardCost":"1518.79","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"792", "Name":"Road-250 Red, 58","ProductNumber":"BK-R89R-58","Color":"Red","StandardCost":"1554.95","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"793", "Name":"Road-250 Black, 44","ProductNumber":"BK-R89B-44","Color":"Black","StandardCost":"1554.95","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"794", "Name":"Road-250 Black, 48","ProductNumber":"BK-R89B-48","Color":"Black","StandardCost":"1554.95","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"795", "Name":"Road-250 Black, 52","ProductNumber":"BK-R89B-52","Color":"Black","StandardCost":"1554.95","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"796", "Name":"Road-250 Black, 58","ProductNumber":"BK-R89B-58","Color":"Black","StandardCost":"1554.95","ListPrice":"2443.35","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"797", "Name":"Road-550-W Yellow, 38","ProductNumber":"BK-R64Y-38","Color":"Yellow","StandardCost":"713.08","ListPrice":"1120.49","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"798", "Name":"Road-550-W Yellow, 40","ProductNumber":"BK-R64Y-40","Color":"Yellow","StandardCost":"713.08","ListPrice":"1120.49","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"799", "Name":"Road-550-W Yellow, 42","ProductNumber":"BK-R64Y-42","Color":"Yellow","StandardCost":"713.08","ListPrice":"1120.49","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"800", "Name":"Road-550-W Yellow, 44","ProductNumber":"BK-R64Y-44","Color":"Yellow","StandardCost":"713.08","ListPrice":"1120.49","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"801", "Name":"Road-550-W Yellow, 48","ProductNumber":"BK-R64Y-48","Color":"Yellow","StandardCost":"713.08","ListPrice":"1120.49","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"802", "Name":"LL Fork","ProductNumber":"FK-1639","StandardCost":"65.81","ListPrice":"148.22","ProductCategoryID":"14"})
+db.product.insert({ "ProductID":"803", "Name":"ML Fork","ProductNumber":"FK-5136","StandardCost":"77.92","ListPrice":"175.49","ProductCategoryID":"14"})
+db.product.insert({ "ProductID":"804", "Name":"HL Fork","ProductNumber":"FK-9939","StandardCost":"101.89","ListPrice":"229.49","ProductCategoryID":"14"})
+db.product.insert({ "ProductID":"805", "Name":"LL Headset","ProductNumber":"HS-0296","StandardCost":"15.18","ListPrice":"34.20","ProductCategoryID":"15"})
+db.product.insert({ "ProductID":"806", "Name":"ML Headset","ProductNumber":"HS-2451","StandardCost":"45.42","ListPrice":"102.29","ProductCategoryID":"15"})
+db.product.insert({ "ProductID":"807", "Name":"HL Headset","ProductNumber":"HS-3479","StandardCost":"55.38","ListPrice":"124.73","ProductCategoryID":"15"})
+db.product.insert({ "ProductID":"808", "Name":"LL Mountain Handlebars","ProductNumber":"HB-M243","StandardCost":"19.78","ListPrice":"44.54","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"809", "Name":"ML Mountain Handlebars","ProductNumber":"HB-M763","StandardCost":"27.49","ListPrice":"61.92","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"810", "Name":"HL Mountain Handlebars","ProductNumber":"HB-M918","StandardCost":"53.40","ListPrice":"120.27","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"811", "Name":"LL Road Handlebars","ProductNumber":"HB-R504","StandardCost":"19.78","ListPrice":"44.54","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"812", "Name":"ML Road Handlebars","ProductNumber":"HB-R720","StandardCost":"27.49","ListPrice":"61.92","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"813", "Name":"HL Road Handlebars","ProductNumber":"HB-R956","StandardCost":"53.40","ListPrice":"120.27","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"814", "Name":"ML Mountain Frame - Black, 38","ProductNumber":"FR-M63B-38","Color":"Black","StandardCost":"185.82","ListPrice":"348.76","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"815", "Name":"LL Mountain Front Wheel","ProductNumber":"FW-M423","Color":"Black","StandardCost":"26.97","ListPrice":"60.75","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"816", "Name":"ML Mountain Front Wheel","ProductNumber":"FW-M762","Color":"Black","StandardCost":"92.81","ListPrice":"209.03","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"817", "Name":"HL Mountain Front Wheel","ProductNumber":"FW-M928","Color":"Black","StandardCost":"133.30","ListPrice":"300.22","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"818", "Name":"LL Road Front Wheel","ProductNumber":"FW-R623","Color":"Black","StandardCost":"37.99","ListPrice":"85.57","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"819", "Name":"ML Road Front Wheel","ProductNumber":"FW-R762","Color":"Black","StandardCost":"110.28","ListPrice":"248.39","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"820", "Name":"HL Road Front Wheel","ProductNumber":"FW-R820","Color":"Black","StandardCost":"146.55","ListPrice":"330.06","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"821", "Name":"Touring Front Wheel","ProductNumber":"FW-T905","Color":"Black","StandardCost":"96.80","ListPrice":"218.01","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"822", "Name":"ML Road Frame-W - Yellow, 38","ProductNumber":"FR-R72Y-38","Color":"Yellow","StandardCost":"360.94","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"823", "Name":"LL Mountain Rear Wheel","ProductNumber":"RW-M423","Color":"Black","StandardCost":"38.96","ListPrice":"87.75","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"824", "Name":"ML Mountain Rear Wheel","ProductNumber":"RW-M762","Color":"Black","StandardCost":"104.80","ListPrice":"236.03","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"825", "Name":"HL Mountain Rear Wheel","ProductNumber":"RW-M928","Color":"Black","StandardCost":"145.28","ListPrice":"327.22","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"826", "Name":"LL Road Rear Wheel","ProductNumber":"RW-R623","Color":"Black","StandardCost":"49.98","ListPrice":"112.57","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"827", "Name":"ML Road Rear Wheel","ProductNumber":"RW-R762","Color":"Black","StandardCost":"122.27","ListPrice":"275.39","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"828", "Name":"HL Road Rear Wheel","ProductNumber":"RW-R820","Color":"Black","StandardCost":"158.53","ListPrice":"357.06","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"829", "Name":"Touring Rear Wheel","ProductNumber":"RW-T905","Color":"Black","StandardCost":"108.78","ListPrice":"245.01","ProductCategoryID":"21"})
+db.product.insert({ "ProductID":"830", "Name":"ML Mountain Frame - Black, 40","ProductNumber":"FR-M63B-40","Color":"Black","StandardCost":"185.82","ListPrice":"348.76","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"831", "Name":"ML Mountain Frame - Black, 44","ProductNumber":"FR-M63B-44","Color":"Black","StandardCost":"185.82","ListPrice":"348.76","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"832", "Name":"ML Mountain Frame - Black, 48","ProductNumber":"FR-M63B-48","Color":"Black","StandardCost":"185.82","ListPrice":"348.76","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"833", "Name":"ML Road Frame-W - Yellow, 40","ProductNumber":"FR-R72Y-40","Color":"Yellow","StandardCost":"360.94","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"834", "Name":"ML Road Frame-W - Yellow, 42","ProductNumber":"FR-R72Y-42","Color":"Yellow","StandardCost":"360.94","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"835", "Name":"ML Road Frame-W - Yellow, 44","ProductNumber":"FR-R72Y-44","Color":"Yellow","StandardCost":"360.94","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"836", "Name":"ML Road Frame-W - Yellow, 48","ProductNumber":"FR-R72Y-48","Color":"Yellow","StandardCost":"360.94","ListPrice":"594.83","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"837", "Name":"HL Road Frame - Black, 62","ProductNumber":"FR-R92B-62","Color":"Black","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"838", "Name":"HL Road Frame - Black, 44","ProductNumber":"FR-R92B-44","Color":"Black","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"839", "Name":"HL Road Frame - Black, 48","ProductNumber":"FR-R92B-48","Color":"Black","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"840", "Name":"HL Road Frame - Black, 52","ProductNumber":"FR-R92B-52","Color":"Black","StandardCost":"868.63","ListPrice":"1431.50","ProductCategoryID":"18"})
+db.product.insert({ "ProductID":"841", "Name":"Men's Sports Shorts, S","ProductNumber":"SH-M897-S","Color":"Black","StandardCost":"24.75","ListPrice":"59.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"842", "Name":"Touring-Panniers, Large","ProductNumber":"PA-T100","Color":"Grey","StandardCost":"51.56","ListPrice":"125.00","ProductCategoryID":"39"})
+db.product.insert({ "ProductID":"843", "Name":"Cable Lock","ProductNumber":"LO-C100","StandardCost":"10.31","ListPrice":"25.00","ProductCategoryID":"38"})
+db.product.insert({ "ProductID":"844", "Name":"Minipump","ProductNumber":"PU-0452","StandardCost":"8.25","ListPrice":"19.99","ProductCategoryID":"40"})
+db.product.insert({ "ProductID":"845", "Name":"Mountain Pump","ProductNumber":"PU-M044","StandardCost":"10.31","ListPrice":"24.99","ProductCategoryID":"40"})
+db.product.insert({ "ProductID":"846", "Name":"Taillights - Battery-Powered","ProductNumber":"LT-T990","StandardCost":"5.77","ListPrice":"13.99","ProductCategoryID":"37"})
+db.product.insert({ "ProductID":"847", "Name":"Headlights - Dual-Beam","ProductNumber":"LT-H902","StandardCost":"14.43","ListPrice":"34.99","ProductCategoryID":"37"})
+db.product.insert({ "ProductID":"848", "Name":"Headlights - Weatherproof","ProductNumber":"LT-H903","StandardCost":"18.56","ListPrice":"44.99","ProductCategoryID":"37"})
+db.product.insert({ "ProductID":"849", "Name":"Men's Sports Shorts, M","ProductNumber":"SH-M897-M","Color":"Black","StandardCost":"24.75","ListPrice":"59.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"850", "Name":"Men's Sports Shorts, L","ProductNumber":"SH-M897-L","Color":"Black","StandardCost":"24.75","ListPrice":"59.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"851", "Name":"Men's Sports Shorts, XL","ProductNumber":"SH-M897-X","Color":"Black","StandardCost":"24.75","ListPrice":"59.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"852", "Name":"Women's Tights, S","ProductNumber":"TG-W091-S","Color":"Black","StandardCost":"30.93","ListPrice":"74.99","ProductCategoryID":"28"})
+db.product.insert({ "ProductID":"853", "Name":"Women's Tights, M","ProductNumber":"TG-W091-M","Color":"Black","StandardCost":"30.93","ListPrice":"74.99","ProductCategoryID":"28"})
+db.product.insert({ "ProductID":"854", "Name":"Women's Tights, L","ProductNumber":"TG-W091-L","Color":"Black","StandardCost":"30.93","ListPrice":"74.99","ProductCategoryID":"28"})
+db.product.insert({ "ProductID":"855", "Name":"Men's Bib-Shorts, S","ProductNumber":"SB-M891-S","Color":"Multi","StandardCost":"37.12","ListPrice":"89.99","ProductCategoryID":"22"})
+db.product.insert({ "ProductID":"856", "Name":"Men's Bib-Shorts, M","ProductNumber":"SB-M891-M","Color":"Multi","StandardCost":"37.12","ListPrice":"89.99","ProductCategoryID":"22"})
+db.product.insert({ "ProductID":"857", "Name":"Men's Bib-Shorts, L","ProductNumber":"SB-M891-L","Color":"Multi","StandardCost":"37.12","ListPrice":"89.99","ProductCategoryID":"22"})
+db.product.insert({ "ProductID":"858", "Name":"Half-Finger Gloves, S","ProductNumber":"GL-H102-S","Color":"Black","StandardCost":"9.16","ListPrice":"24.49","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"859", "Name":"Half-Finger Gloves, M","ProductNumber":"GL-H102-M","Color":"Black","StandardCost":"9.16","ListPrice":"24.49","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"860", "Name":"Half-Finger Gloves, L","ProductNumber":"GL-H102-L","Color":"Black","StandardCost":"9.16","ListPrice":"24.49","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"861", "Name":"Full-Finger Gloves, S","ProductNumber":"GL-F110-S","Color":"Black","StandardCost":"15.67","ListPrice":"37.99","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"862", "Name":"Full-Finger Gloves, M","ProductNumber":"GL-F110-M","Color":"Black","StandardCost":"15.67","ListPrice":"37.99","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"863", "Name":"Full-Finger Gloves, L","ProductNumber":"GL-F110-L","Color":"Black","StandardCost":"15.67","ListPrice":"37.99","ProductCategoryID":"24"})
+db.product.insert({ "ProductID":"864", "Name":"Classic Vest, S","ProductNumber":"VE-C304-S","Color":"Blue","StandardCost":"23.75","ListPrice":"63.50","ProductCategoryID":"29"})
+db.product.insert({ "ProductID":"865", "Name":"Classic Vest, M","ProductNumber":"VE-C304-M","Color":"Blue","StandardCost":"23.75","ListPrice":"63.50","ProductCategoryID":"29"})
+db.product.insert({ "ProductID":"866", "Name":"Classic Vest, L","ProductNumber":"VE-C304-L","Color":"Blue","StandardCost":"23.75","ListPrice":"63.50","ProductCategoryID":"29"})
+db.product.insert({ "ProductID":"867", "Name":"Women's Mountain Shorts, S","ProductNumber":"SH-W890-S","Color":"Black","StandardCost":"26.18","ListPrice":"69.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"868", "Name":"Women's Mountain Shorts, M","ProductNumber":"SH-W890-M","Color":"Black","StandardCost":"26.18","ListPrice":"69.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"869", "Name":"Women's Mountain Shorts, L","ProductNumber":"SH-W890-L","Color":"Black","StandardCost":"26.18","ListPrice":"69.99","ProductCategoryID":"26"})
+db.product.insert({ "ProductID":"870", "Name":"Water Bottle - 30 oz.","ProductNumber":"WB-H098","StandardCost":"1.87","ListPrice":"4.99","ProductCategoryID":"32"})
+db.product.insert({ "ProductID":"871", "Name":"Mountain Bottle Cage","ProductNumber":"BC-M005","StandardCost":"3.74","ListPrice":"9.99","ProductCategoryID":"32"})
+db.product.insert({ "ProductID":"872", "Name":"Road Bottle Cage","ProductNumber":"BC-R205","StandardCost":"3.36","ListPrice":"8.99","ProductCategoryID":"32"})
+db.product.insert({ "ProductID":"873", "Name":"Patch Kit/8 Patches","ProductNumber":"PK-7098","StandardCost":"0.86","ListPrice":"2.29","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"874", "Name":"Racing Socks, M","ProductNumber":"SO-R809-M","Color":"White","StandardCost":"3.36","ListPrice":"8.99","ProductCategoryID":"27"})
+db.product.insert({ "ProductID":"875", "Name":"Racing Socks, L","ProductNumber":"SO-R809-L","Color":"White","StandardCost":"3.36","ListPrice":"8.99","ProductCategoryID":"27"})
+db.product.insert({ "ProductID":"876", "Name":"Hitch Rack - 4-Bike","ProductNumber":"RA-H123","StandardCost":"44.88","ListPrice":"120.00","ProductCategoryID":"30"})
+db.product.insert({ "ProductID":"877", "Name":"Bike Wash - Dissolver","ProductNumber":"CL-9009","StandardCost":"2.97","ListPrice":"7.95","ProductCategoryID":"33"})
+db.product.insert({ "ProductID":"878", "Name":"Fender Set - Mountain","ProductNumber":"FE-6654","StandardCost":"8.22","ListPrice":"21.98","ProductCategoryID":"34"})
+db.product.insert({ "ProductID":"879", "Name":"All-Purpose Bike Stand","ProductNumber":"ST-1401","StandardCost":"59.47","ListPrice":"159.00","ProductCategoryID":"31"})
+db.product.insert({ "ProductID":"880", "Name":"Hydration Pack - 70 oz.","ProductNumber":"HY-1023-70","Color":"Silver","StandardCost":"20.57","ListPrice":"54.99","ProductCategoryID":"36"})
+db.product.insert({ "ProductID":"881", "Name":"Short-Sleeve Classic Jersey, S","ProductNumber":"SJ-0194-S","Color":"Yellow","StandardCost":"41.57","ListPrice":"53.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"882", "Name":"Short-Sleeve Classic Jersey, M","ProductNumber":"SJ-0194-M","Color":"Yellow","StandardCost":"41.57","ListPrice":"53.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"883", "Name":"Short-Sleeve Classic Jersey, L","ProductNumber":"SJ-0194-L","Color":"Yellow","StandardCost":"41.57","ListPrice":"53.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"884", "Name":"Short-Sleeve Classic Jersey, XL","ProductNumber":"SJ-0194-X","Color":"Yellow","StandardCost":"41.57","ListPrice":"53.99","ProductCategoryID":"25"})
+db.product.insert({ "ProductID":"885", "Name":"HL Touring Frame - Yellow, 60","ProductNumber":"FR-T98Y-60","Color":"Yellow","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"886", "Name":"LL Touring Frame - Yellow, 62","ProductNumber":"FR-T67Y-62","Color":"Yellow","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"887", "Name":"HL Touring Frame - Yellow, 46","ProductNumber":"FR-T98Y-46","Color":"Yellow","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"888", "Name":"HL Touring Frame - Yellow, 50","ProductNumber":"FR-T98Y-50","Color":"Yellow","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"889", "Name":"HL Touring Frame - Yellow, 54","ProductNumber":"FR-T98Y-54","Color":"Yellow","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"890", "Name":"HL Touring Frame - Blue, 46","ProductNumber":"FR-T98U-46","Color":"Blue","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"891", "Name":"HL Touring Frame - Blue, 50","ProductNumber":"FR-T98U-50","Color":"Blue","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"892", "Name":"HL Touring Frame - Blue, 54","ProductNumber":"FR-T98U-54","Color":"Blue","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"893", "Name":"HL Touring Frame - Blue, 60","ProductNumber":"FR-T98U-60","Color":"Blue","StandardCost":"601.74","ListPrice":"1003.91","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"894", "Name":"Rear Derailleur","ProductNumber":"RD-2308","Color":"Silver","StandardCost":"53.93","ListPrice":"121.46","ProductCategoryID":"13"})
+db.product.insert({ "ProductID":"895", "Name":"LL Touring Frame - Blue, 50","ProductNumber":"FR-T67U-50","Color":"Blue","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"896", "Name":"LL Touring Frame - Blue, 54","ProductNumber":"FR-T67U-54","Color":"Blue","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"897", "Name":"LL Touring Frame - Blue, 58","ProductNumber":"FR-T67U-58","Color":"Blue","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"898", "Name":"LL Touring Frame - Blue, 62","ProductNumber":"FR-T67U-62","Color":"Blue","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"899", "Name":"LL Touring Frame - Yellow, 44","ProductNumber":"FR-T67Y-44","Color":"Yellow","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"900", "Name":"LL Touring Frame - Yellow, 50","ProductNumber":"FR-T67Y-50","Color":"Yellow","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"901", "Name":"LL Touring Frame - Yellow, 54","ProductNumber":"FR-T67Y-54","Color":"Yellow","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"902", "Name":"LL Touring Frame - Yellow, 58","ProductNumber":"FR-T67Y-58","Color":"Yellow","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"903", "Name":"LL Touring Frame - Blue, 44","ProductNumber":"FR-T67U-44","Color":"Blue","StandardCost":"199.85","ListPrice":"333.42","ProductCategoryID":"20"})
+db.product.insert({ "ProductID":"904", "Name":"ML Mountain Frame-W - Silver, 40","ProductNumber":"FR-M63S-40","Color":"Silver","StandardCost":"199.38","ListPrice":"364.09","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"905", "Name":"ML Mountain Frame-W - Silver, 42","ProductNumber":"FR-M63S-42","Color":"Silver","StandardCost":"199.38","ListPrice":"364.09","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"906", "Name":"ML Mountain Frame-W - Silver, 46","ProductNumber":"FR-M63S-46","Color":"Silver","StandardCost":"199.38","ListPrice":"364.09","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"907", "Name":"Rear Brakes","ProductNumber":"RB-9231","Color":"Silver","StandardCost":"47.29","ListPrice":"106.50","ProductCategoryID":"10"})
+db.product.insert({ "ProductID":"908", "Name":"LL Mountain Seat/Saddle","ProductNumber":"SE-M236","StandardCost":"12.04","ListPrice":"27.12","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"909", "Name":"ML Mountain Seat/Saddle","ProductNumber":"SE-M798","StandardCost":"17.38","ListPrice":"39.14","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"910", "Name":"HL Mountain Seat/Saddle","ProductNumber":"SE-M940","StandardCost":"23.37","ListPrice":"52.64","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"911", "Name":"LL Road Seat/Saddle","ProductNumber":"SE-R581","StandardCost":"12.04","ListPrice":"27.12","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"912", "Name":"ML Road Seat/Saddle","ProductNumber":"SE-R908","StandardCost":"17.38","ListPrice":"39.14","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"913", "Name":"HL Road Seat/Saddle","ProductNumber":"SE-R995","StandardCost":"23.37","ListPrice":"52.64","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"914", "Name":"LL Touring Seat/Saddle","ProductNumber":"SE-T312","StandardCost":"12.04","ListPrice":"27.12","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"915", "Name":"ML Touring Seat/Saddle","ProductNumber":"SE-T762","StandardCost":"17.38","ListPrice":"39.14","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"916", "Name":"HL Touring Seat/Saddle","ProductNumber":"SE-T924","StandardCost":"23.37","ListPrice":"52.64","ProductCategoryID":"19"})
+db.product.insert({ "ProductID":"917", "Name":"LL Mountain Frame - Silver, 42","ProductNumber":"FR-M21S-42","Color":"Silver","StandardCost":"144.59","ListPrice":"264.05","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"918", "Name":"LL Mountain Frame - Silver, 44","ProductNumber":"FR-M21S-44","Color":"Silver","StandardCost":"144.59","ListPrice":"264.05","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"919", "Name":"LL Mountain Frame - Silver, 48","ProductNumber":"FR-M21S-48","Color":"Silver","StandardCost":"144.59","ListPrice":"264.05","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"920", "Name":"LL Mountain Frame - Silver, 52","ProductNumber":"FR-M21S-52","Color":"Silver","StandardCost":"144.59","ListPrice":"264.05","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"921", "Name":"Mountain Tire Tube","ProductNumber":"TT-M928","StandardCost":"1.87","ListPrice":"4.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"922", "Name":"Road Tire Tube","ProductNumber":"TT-R982","StandardCost":"1.49","ListPrice":"3.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"923", "Name":"Touring Tire Tube","ProductNumber":"TT-T092","StandardCost":"1.87","ListPrice":"4.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"924", "Name":"LL Mountain Frame - Black, 42","ProductNumber":"FR-M21B-42","Color":"Black","StandardCost":"136.79","ListPrice":"249.79","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"925", "Name":"LL Mountain Frame - Black, 44","ProductNumber":"FR-M21B-44","Color":"Black","StandardCost":"136.79","ListPrice":"249.79","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"926", "Name":"LL Mountain Frame - Black, 48","ProductNumber":"FR-M21B-48","Color":"Black","StandardCost":"136.79","ListPrice":"249.79","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"927", "Name":"LL Mountain Frame - Black, 52","ProductNumber":"FR-M21B-52","Color":"Black","StandardCost":"136.79","ListPrice":"249.79","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"928", "Name":"LL Mountain Tire","ProductNumber":"TI-M267","StandardCost":"9.35","ListPrice":"24.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"929", "Name":"ML Mountain Tire","ProductNumber":"TI-M602","StandardCost":"11.22","ListPrice":"29.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"930", "Name":"HL Mountain Tire","ProductNumber":"TI-M823","StandardCost":"13.09","ListPrice":"35.00","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"931", "Name":"LL Road Tire","ProductNumber":"TI-R092","StandardCost":"8.04","ListPrice":"21.49","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"932", "Name":"ML Road Tire","ProductNumber":"TI-R628","StandardCost":"9.35","ListPrice":"24.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"933", "Name":"HL Road Tire","ProductNumber":"TI-R982","StandardCost":"12.19","ListPrice":"32.60","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"934", "Name":"Touring Tire","ProductNumber":"TI-T723","StandardCost":"10.84","ListPrice":"28.99","ProductCategoryID":"41"})
+db.product.insert({ "ProductID":"935", "Name":"LL Mountain Pedal","ProductNumber":"PD-M282","Color":"Silver/Black","StandardCost":"17.98","ListPrice":"40.49","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"936", "Name":"ML Mountain Pedal","ProductNumber":"PD-M340","Color":"Silver/Black","StandardCost":"27.57","ListPrice":"62.09","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"937", "Name":"HL Mountain Pedal","ProductNumber":"PD-M562","Color":"Silver/Black","StandardCost":"35.96","ListPrice":"80.99","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"938", "Name":"LL Road Pedal","ProductNumber":"PD-R347","Color":"Silver/Black","StandardCost":"17.98","ListPrice":"40.49","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"939", "Name":"ML Road Pedal","ProductNumber":"PD-R563","Color":"Silver/Black","StandardCost":"27.57","ListPrice":"62.09","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"940", "Name":"HL Road Pedal","ProductNumber":"PD-R853","Color":"Silver/Black","StandardCost":"35.96","ListPrice":"80.99","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"941", "Name":"Touring Pedal","ProductNumber":"PD-T852","Color":"Silver/Black","StandardCost":"35.96","ListPrice":"80.99","ProductCategoryID":"17"})
+db.product.insert({ "ProductID":"942", "Name":"ML Mountain Frame-W - Silver, 38","ProductNumber":"FR-M63S-38","Color":"Silver","StandardCost":"199.38","ListPrice":"364.09","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"943", "Name":"LL Mountain Frame - Black, 40","ProductNumber":"FR-M21B-40","Color":"Black","StandardCost":"136.79","ListPrice":"249.79","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"944", "Name":"LL Mountain Frame - Silver, 40","ProductNumber":"FR-M21S-40","Color":"Silver","StandardCost":"144.59","ListPrice":"264.05","ProductCategoryID":"16"})
+db.product.insert({ "ProductID":"945", "Name":"Front Derailleur","ProductNumber":"FD-2342","Color":"Silver","StandardCost":"40.62","ListPrice":"91.49","ProductCategoryID":"13"})
+db.product.insert({ "ProductID":"946", "Name":"LL Touring Handlebars","ProductNumber":"HB-T721","StandardCost":"20.46","ListPrice":"46.09","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"947", "Name":"HL Touring Handlebars","ProductNumber":"HB-T928","StandardCost":"40.66","ListPrice":"91.57","ProductCategoryID":"8"})
+db.product.insert({ "ProductID":"948", "Name":"Front Brakes","ProductNumber":"FB-9873","Color":"Silver","StandardCost":"47.29","ListPrice":"106.50","ProductCategoryID":"10"})
+db.product.insert({ "ProductID":"949", "Name":"LL Crankset","ProductNumber":"CS-4759","Color":"Black","StandardCost":"77.92","ListPrice":"175.49","ProductCategoryID":"12"})
+db.product.insert({ "ProductID":"950", "Name":"ML Crankset","ProductNumber":"CS-6583","Color":"Black","StandardCost":"113.88","ListPrice":"256.49","ProductCategoryID":"12"})
+db.product.insert({ "ProductID":"951", "Name":"HL Crankset","ProductNumber":"CS-9183","Color":"Black","StandardCost":"179.82","ListPrice":"404.99","ProductCategoryID":"12"})
+db.product.insert({ "ProductID":"952", "Name":"Chain","ProductNumber":"CH-0234","Color":"Silver","StandardCost":"8.99","ListPrice":"20.24","ProductCategoryID":"11"})
+db.product.insert({ "ProductID":"953", "Name":"Touring-2000 Blue, 60","ProductNumber":"BK-T44U-60","Color":"Blue","StandardCost":"755.15","ListPrice":"1214.85","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"954", "Name":"Touring-1000 Yellow, 46","ProductNumber":"BK-T79Y-46","Color":"Yellow","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"955", "Name":"Touring-1000 Yellow, 50","ProductNumber":"BK-T79Y-50","Color":"Yellow","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"956", "Name":"Touring-1000 Yellow, 54","ProductNumber":"BK-T79Y-54","Color":"Yellow","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"957", "Name":"Touring-1000 Yellow, 60","ProductNumber":"BK-T79Y-60","Color":"Yellow","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"958", "Name":"Touring-3000 Blue, 54","ProductNumber":"BK-T18U-54","Color":"Blue","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"959", "Name":"Touring-3000 Blue, 58","ProductNumber":"BK-T18U-58","Color":"Blue","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"960", "Name":"Touring-3000 Blue, 62","ProductNumber":"BK-T18U-62","Color":"Blue","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"961", "Name":"Touring-3000 Yellow, 44","ProductNumber":"BK-T18Y-44","Color":"Yellow","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"962", "Name":"Touring-3000 Yellow, 50","ProductNumber":"BK-T18Y-50","Color":"Yellow","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"963", "Name":"Touring-3000 Yellow, 54","ProductNumber":"BK-T18Y-54","Color":"Yellow","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"964", "Name":"Touring-3000 Yellow, 58","ProductNumber":"BK-T18Y-58","Color":"Yellow","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"965", "Name":"Touring-3000 Yellow, 62","ProductNumber":"BK-T18Y-62","Color":"Yellow","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"966", "Name":"Touring-1000 Blue, 46","ProductNumber":"BK-T79U-46","Color":"Blue","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"967", "Name":"Touring-1000 Blue, 50","ProductNumber":"BK-T79U-50","Color":"Blue","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"968", "Name":"Touring-1000 Blue, 54","ProductNumber":"BK-T79U-54","Color":"Blue","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"969", "Name":"Touring-1000 Blue, 60","ProductNumber":"BK-T79U-60","Color":"Blue","StandardCost":"1481.94","ListPrice":"2384.07","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"970", "Name":"Touring-2000 Blue, 46","ProductNumber":"BK-T44U-46","Color":"Blue","StandardCost":"755.15","ListPrice":"1214.85","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"971", "Name":"Touring-2000 Blue, 50","ProductNumber":"BK-T44U-50","Color":"Blue","StandardCost":"755.15","ListPrice":"1214.85","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"972", "Name":"Touring-2000 Blue, 54","ProductNumber":"BK-T44U-54","Color":"Blue","StandardCost":"755.15","ListPrice":"1214.85","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"973", "Name":"Road-350-W Yellow, 40","ProductNumber":"BK-R79Y-40","Color":"Yellow","StandardCost":"1082.51","ListPrice":"1700.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"974", "Name":"Road-350-W Yellow, 42","ProductNumber":"BK-R79Y-42","Color":"Yellow","StandardCost":"1082.51","ListPrice":"1700.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"975", "Name":"Road-350-W Yellow, 44","ProductNumber":"BK-R79Y-44","Color":"Yellow","StandardCost":"1082.51","ListPrice":"1700.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"976", "Name":"Road-350-W Yellow, 48","ProductNumber":"BK-R79Y-48","Color":"Yellow","StandardCost":"1082.51","ListPrice":"1700.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"977", "Name":"Road-750 Black, 58","ProductNumber":"BK-R19B-58","Color":"Black","StandardCost":"343.65","ListPrice":"539.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"978", "Name":"Touring-3000 Blue, 44","ProductNumber":"BK-T18U-44","Color":"Blue","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"979", "Name":"Touring-3000 Blue, 50","ProductNumber":"BK-T18U-50","Color":"Blue","StandardCost":"461.44","ListPrice":"742.35","ProductCategoryID":"7"})
+db.product.insert({ "ProductID":"980", "Name":"Mountain-400-W Silver, 38","ProductNumber":"BK-M38S-38","Color":"Silver","StandardCost":"419.78","ListPrice":"769.49","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"981", "Name":"Mountain-400-W Silver, 40","ProductNumber":"BK-M38S-40","Color":"Silver","StandardCost":"419.78","ListPrice":"769.49","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"982", "Name":"Mountain-400-W Silver, 42","ProductNumber":"BK-M38S-42","Color":"Silver","StandardCost":"419.78","ListPrice":"769.49","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"983", "Name":"Mountain-400-W Silver, 46","ProductNumber":"BK-M38S-46","Color":"Silver","StandardCost":"419.78","ListPrice":"769.49","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"984", "Name":"Mountain-500 Silver, 40","ProductNumber":"BK-M18S-40","Color":"Silver","StandardCost":"308.22","ListPrice":"564.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"985", "Name":"Mountain-500 Silver, 42","ProductNumber":"BK-M18S-42","Color":"Silver","StandardCost":"308.22","ListPrice":"564.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"986", "Name":"Mountain-500 Silver, 44","ProductNumber":"BK-M18S-44","Color":"Silver","StandardCost":"308.22","ListPrice":"564.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"987", "Name":"Mountain-500 Silver, 48","ProductNumber":"BK-M18S-48","Color":"Silver","StandardCost":"308.22","ListPrice":"564.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"988", "Name":"Mountain-500 Silver, 52","ProductNumber":"BK-M18S-52","Color":"Silver","StandardCost":"308.22","ListPrice":"564.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"989", "Name":"Mountain-500 Black, 40","ProductNumber":"BK-M18B-40","Color":"Black","StandardCost":"294.58","ListPrice":"539.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"990", "Name":"Mountain-500 Black, 42","ProductNumber":"BK-M18B-42","Color":"Black","StandardCost":"294.58","ListPrice":"539.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"991", "Name":"Mountain-500 Black, 44","ProductNumber":"BK-M18B-44","Color":"Black","StandardCost":"294.58","ListPrice":"539.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"992", "Name":"Mountain-500 Black, 48","ProductNumber":"BK-M18B-48","Color":"Black","StandardCost":"294.58","ListPrice":"539.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"993", "Name":"Mountain-500 Black, 52","ProductNumber":"BK-M18B-52","Color":"Black","StandardCost":"294.58","ListPrice":"539.99","ProductCategoryID":"5"})
+db.product.insert({ "ProductID":"994", "Name":"LL Bottom Bracket","ProductNumber":"BB-7421","StandardCost":"23.97","ListPrice":"53.99","ProductCategoryID":"9"})
+db.product.insert({ "ProductID":"995", "Name":"ML Bottom Bracket","ProductNumber":"BB-8107","StandardCost":"44.95","ListPrice":"101.24","ProductCategoryID":"9"})
+db.product.insert({ "ProductID":"996", "Name":"HL Bottom Bracket","ProductNumber":"BB-9108","StandardCost":"53.94","ListPrice":"121.49","ProductCategoryID":"9"})
+db.product.insert({ "ProductID":"997", "Name":"Road-750 Black, 44","ProductNumber":"BK-R19B-44","Color":"Black","StandardCost":"343.65","ListPrice":"539.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"998", "Name":"Road-750 Black, 48","ProductNumber":"BK-R19B-48","Color":"Black","StandardCost":"343.65","ListPrice":"539.99","ProductCategoryID":"6"})
+db.product.insert({ "ProductID":"999", "Name":"Road-750 Black, 52","ProductNumber":"BK-R19B-52","Color":"Black","StandardCost":"343.65","ListPrice":"539.99","ProductCategoryID":"6"})

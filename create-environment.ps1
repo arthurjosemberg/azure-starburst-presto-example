@@ -132,6 +132,8 @@ New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName `
                               -TemplateParameterFile $templateParameterFile
 
 
+### Select Azure Subscription Context ###
+Set-AzContext
 ### Create Variables ###
 $subcriptionName = "Microsoft Azure Sponsorship"
 $resourceGroupName = "bigdatargn"
@@ -139,9 +141,7 @@ $storageAccountName = "storage$resourceGroupName"
 $containerName = "starburstpresto"
 $fileLocation1 = "/Users/arthurluz/OneDrive/dataslight/starburst_presto/presto-connectors.zip"
 $fileLocation2 = "/Users/arthurluz/OneDrive/dataslight/adventureworks_oltp_files/SalesOrderDetail.csv"
-
-### Select Azure Subscription Context ###
-Set-AzContext -SubscriptionName $subcriptionName
+ -SubscriptionName $subcriptionName
 
 $storageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName `
                                               -Name $storageAccountName).Value[0]
