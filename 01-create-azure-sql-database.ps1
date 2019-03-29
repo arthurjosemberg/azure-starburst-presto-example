@@ -3,9 +3,11 @@
 #>## --------------------------- ###
 
 ### Login to Azure Account ###
-Login-AzAccount
+#Login-AzAccount
 
+# ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"
+
 $resourceGroupName = "bigdatargn"
 $location = "West US"
 $adminSqlLogin = "arthur.luz"

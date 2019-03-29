@@ -3,16 +3,21 @@
 #>## ------------------------ ###
 
 ### Login to Azure Account ###
-Login-AzAccount 
+#Login-AzAccount 
+
+# ALTERE O NOME DA SUBSCRIPTION
+$subcriptionName = "Microsoft Azure Sponsorship"
+
+# ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/dataslight/starburst_presto"
 
 ### Create Variables ###
-$subcriptionName = "Microsoft Azure Sponsorship"
 $resourceGroupName = "bigdatargn"
 $storageAccountName = "storage$resourceGroupName"
 $containerName = "starburstpresto"
 $location = "West US"
-$fileLocation1 = "/Users/arthurluz/OneDrive/dataslight/starburst_presto/presto-connectors.zip"
-$fileLocation2 = "/Users/arthurluz/OneDrive/dataslight/adventureworks_oltp_files/SalesOrderDetail.csv"
+$fileLocation1 = "$configurationFilesDirectory/presto-connectors.zip"
+$fileLocation2 = "$configurationFilesDirectory/adventureworks_oltp_files/SalesOrderDetail.csv"
 
 # Set subscription 
 Set-AzContext -SubscriptionName $subcriptionName -Force

@@ -9,13 +9,18 @@
 ### Login to Azure Account ###
 #Login-AzAccount
 
+# ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"
+
+# ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight"
+
 $resourceGroupName = "bigdatargn"
 $databaseName = "adventureworks"
 $cosmosdbAccountName = "dataslightcdb"
 $location = "West US"
-$templateFile = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/template_api_mongodb_cosmos_db/template.json"
-$templateParameterFile = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/template_api_mongodb_cosmos_db/parametersFile.json"
+$templateFile = "$configurationFilesDirectory/template_api_mongodb_cosmos_db/template.json"
+$templateParameterFile = "$configurationFilesDirectory/template_api_mongodb_cosmos_db/parametersFile.json"
 
 # Set subscription 
 Set-AzContext -SubscriptionName $subcriptionName -Force

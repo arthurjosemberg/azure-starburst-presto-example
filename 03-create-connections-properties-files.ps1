@@ -1,8 +1,13 @@
 ### Login to Azure Account ###
-Login-AzAccount
+#Login-AzAccount
+
+# ALTERE O NOME DA SUBSCRIPTION
+$subcriptionName = "Microsoft Azure Sponsorship"
+
+# ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/dataslight/starburst_presto"
 
 # CosmosDb Variables
-$subcriptionName = "Microsoft Azure Sponsorship"
 $cosmosdbAccountName = "dataslightcdb"
 $resourceGroupName = "bigdatargn"
 
@@ -11,8 +16,6 @@ $sqldatabaseserverName = "dataslightaw"
 $sqldatabasedatabaseName = "adventureWorks"
 $sqldatabaseUser = "arthur.luz"
 $sqldatabasePassword = "b1gDataCluster&"
-
-$configurationFilesDirectory = "/Users/arthurluz/OneDrive/dataslight/starburst_presto"
 
 # Set subscription 
 Set-AzContext -SubscriptionName $subcriptionName

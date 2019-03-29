@@ -3,13 +3,18 @@
 #>## -------------------------- ###
 
 ### Login to Azure Account ###
-Login-AzAccount 
+#Login-AzAccount 
+
+# ALTERE O NOME DA SUBSCRIPTION
+$subcriptionName = "Microsoft Azure Sponsorship"
+
+# ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight"
 
 ### Create Variables ###
-$subcriptionName = "Microsoft Azure Sponsorship"
 $resourceGroupName = "bigdatargn"
-$templateFile = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/template_create_hdinsight_with_presto/template.json"
-$templateParameterFile = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/template_create_hdinsight_with_presto/parametersFile.json"
+$templateFile = "$configurationFilesDirectory/template_create_hdinsight_with_presto/template.json"
+$templateParameterFile = "$configurationFilesDirectory/template_create_hdinsight_with_presto/parametersFile.json"
 
 # Set subscription 
 Set-AzContext -SubscriptionName $subcriptionName -Force

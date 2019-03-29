@@ -2,8 +2,10 @@
     Add Connectors on Starburst Presto on HdInsight Cluster
 #>## ---------------------------------------------------- ###
 
-### Create Variables ###
+# ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"
+
+### Create Variables ###
 $resourceGroupName = "bigdatargn"
 $storageAccountName = "storage$resourceGroupName"
 $containerName = "starburstpresto"
@@ -21,12 +23,3 @@ Submit-AzHDInsightScriptAction -ClusterName $clusterName `
                                -Uri "https://starburstdata.blob.core.windows.net/302-e/update-presto-config.sh" `
                                -NodeTypes $nodeTypesHeadWork `
                                -Parameters "-p https://$storageAccountName.blob.core.windows.net/$containerName/customConnectors/presto-connectors.zip"
-
-<### -------------------- ###
-    Remove all Environment 
-#>## -------------------- ###
-
-<#
-Set-AzContext -SubscriptionName $subcriptionName
-Remove-azResourceGroup -Name $resourceGroupName -Force
-#>
