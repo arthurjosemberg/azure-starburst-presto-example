@@ -3,7 +3,7 @@
 #>## --------------------------- ###
 
 ### Login to Azure Account ###
-#Login-AzAccount
+Login-AzAccount
 
 $subcriptionName = "Microsoft Azure Sponsorship"
 $resourceGroupName = "bigdatargn"

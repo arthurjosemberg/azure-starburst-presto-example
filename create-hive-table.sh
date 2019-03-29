@@ -1,5 +1,6 @@
 ### Login into HDInsightCluster ###
 ssh arthurluzssh@starburstpresto-ssh.azurehdinsight.net
+# b1gDataCluster&
 
 ### Open Hive application ###
 /usr/bin/hive

@@ -3,24 +3,37 @@
 #>## ------------------------ ###
 
 ### Login to Azure Account ###
-#Login-AzAccount 
+Login-AzAccount 
 
 ### Create Variables ###
 $subcriptionName = "Microsoft Azure Sponsorship"
 $resourceGroupName = "bigdatargn"
 $storageAccountName = "storage$resourceGroupName"
 $containerName = "starburstpresto"
+$location = "West US"
 $fileLocation1 = "/Users/arthurluz/OneDrive/dataslight/starburst_presto/presto-connectors.zip"
 $fileLocation2 = "/Users/arthurluz/OneDrive/dataslight/adventureworks_oltp_files/SalesOrderDetail.csv"
 
-### Select Azure Subscription Context ###
-Set-AzContext -SubscriptionName $subcriptionName
+# Set subscription 
+Set-AzContext -SubscriptionName $subcriptionName -Force
 
+### Create new Storage Account ###
+New-AzStorageAccount -ResourceGroupName $resourceGroupName `
+                     -Name $storageAccountName `
+                     -Type Standard_GRS `
+                     -Location $location 
+
+### Create a Blob Storage Container ###
+### It's necessary container security access on blob
 $storageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName `
-                                              -Name $storageAccountName).Value[0]
+                                             -Name $storageAccountName).Value[0]
 
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName `
                                        -StorageAccountKey $storageAccountKey
+
+New-AzStorageContainer -Name $containerName `
+                       -Context $storageContext `
+                       -Permission Container
 
 # Load file you need to setup the URL to Local zip file with connectors config
 set-AzStorageblobcontent -File $fileLocation1 `
