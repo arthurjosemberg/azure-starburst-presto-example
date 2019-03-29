@@ -9,7 +9,7 @@
 $subcriptionName = "Microsoft Azure Sponsorship"
 
 # ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
-$configurationFilesDirectory = "/Users/arthurluz/OneDrive/dataslight/starburst_presto"
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/files/starburst_presto"
 
 ### Create Variables ###
 $resourceGroupName = "bigdatargn"
