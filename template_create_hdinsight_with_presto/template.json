@@ -1,0 +1,186 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "0.9.0.0",
+    "parameters": {
+        "clusterName": {
+            "type": "string",
+            "metadata": {
+                "description": "The name of the HDInsight cluster to create."
+            }
+        },
+        "clusterLoginUserName": {
+            "type": "string",
+            "defaultValue": "admin",
+            "metadata": {
+                "description": "These credentials can be used to submit jobs to the cluster and to log into cluster dashboards."
+            }
+        },
+        "clusterLoginPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
+            }
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "westus",
+            "metadata": {
+                "description": "The location where all azure resources will be deployed."
+            }
+        },
+        "clusterVersion": {
+            "type": "string",
+            "defaultValue": "3.6",
+            "metadata": {
+                "description": "HDInsight cluster version."
+            }
+        },
+        "clusterWorkerNodeCount": {
+            "type": "int",
+            "defaultValue": 1,
+            "metadata": {
+                "description": "The number of nodes in the HDInsight cluster."
+            }
+        },
+        "clusterKind": {
+            "type": "string",
+            "defaultValue": "HADOOP",
+            "metadata": {
+                "description": "The type of the HDInsight cluster to create."
+            }
+        },
+        "sshUserName": {
+            "type": "string",
+            "defaultValue": "sshuser",
+            "metadata": {
+                "description": "These credentials can be used to remotely access the cluster."
+            }
+        },
+        "sshPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
+            }
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2015-03-01-preview",
+            "name": "[parameters('clusterName')]",
+            "type": "Microsoft.HDInsight/clusters",
+            "location": "[parameters('location')]",
+            "dependsOn": [],
+            "properties": {
+                "clusterVersion": "[parameters('clusterVersion')]",
+                "osType": "Linux",
+                "tier": "standard",
+                "clusterDefinition": {
+                    "kind": "[parameters('clusterKind')]",
+                    "componentVersion": {
+                        "Hadoop": "2.7"
+                    },
+                    "configurations": {
+                        "gateway": {
+                            "restAuthCredential.isEnabled": true,
+                            "restAuthCredential.username": "[parameters('clusterLoginUserName')]",
+                            "restAuthCredential.password": "[parameters('clusterLoginPassword')]"
+                        }
+                    }
+                },
+                "storageProfile": {
+                    "storageaccounts": [
+                        {
+                            "name": "storagebigdatargn.blob.core.windows.net",
+                            "isDefault": true,
+                            "container": "starburstpresto",
+                            "key": "[listKeys('/subscriptions/ef99ab44-c117-4195-9a7e-9fe820c48e66/resourceGroups/bigdatargn/providers/Microsoft.Storage/storageAccounts/storagebigdatargn', '2015-05-01-preview').key1]"
+                        }
+                    ]
+                },
+                "computeProfile": {
+                    "roles": [
+                        {
+                            "autoscale": null,
+                            "name": "headnode",
+                            "minInstanceCount": 1,
+                            "targetInstanceCount": 2,
+                            "hardwareProfile": {
+                                "vmSize": "Standard_D12_V2"
+                            },
+                            "osProfile": {
+                                "linuxOperatingSystemProfile": {
+                                    "username": "[parameters('sshUserName')]",
+                                    "password": "[parameters('sshPassword')]"
+                                }
+                            },
+                            "virtualNetworkProfile": null,
+                            "scriptActions": [],
+                            "dataDisksGroups": null
+                        },
+                        {
+                            "autoscale": null,
+                            "name": "workernode",
+                            "targetInstanceCount": 1,
+                            "hardwareProfile": {
+                                "vmSize": "Standard_D4_V2"
+                            },
+                            "osProfile": {
+                                "linuxOperatingSystemProfile": {
+                                    "username": "[parameters('sshUserName')]",
+                                    "password": "[parameters('sshPassword')]"
+                                }
+                            },
+                            "virtualNetworkProfile": null,
+                            "scriptActions": [],
+                            "dataDisksGroups": null
+                        },
+                        {
+                            "autoscale": null,
+                            "name": "zookeepernode",
+                            "minInstanceCount": 1,
+                            "targetInstanceCount": 3,
+                            "hardwareProfile": {
+                                "vmSize": "Small"
+                            },
+                            "osProfile": {
+                                "linuxOperatingSystemProfile": {
+                                    "username": "[parameters('sshUserName')]",
+                                    "password": "[parameters('sshPassword')]"
+                                }
+                            },
+                            "virtualNetworkProfile": null,
+                            "scriptActions": [],
+                            "dataDisksGroups": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "apiVersion": "2017-05-10",
+            "name": "starburst-prestostarburst-presto-3_2019-03-29T05.13.48.062Z",
+            "type": "Microsoft.Resources/deployments",
+            "dependsOn": [
+                "Microsoft.HDInsight/clusters/starburstpresto"
+            ],
+            "properties": {
+                "mode": "incremental",
+                "templateLink": {
+                    "uri": "https://gallery.azure.com/artifact/20161101/starburst.starburst-prestostarburst-presto-302e.1.0.0/Artifacts/mainTemplate.json",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "clusterName": {
+                        "value": "[parameters('clusterName')]"
+                    },
+                    "galleryPackageIdentity": {
+                        "value": "starburst.starburst-prestostarburst-presto-302e.1.0.0"
+                    },
+                    "edgeNodeSize": {
+                        "value": "Standard_D3"
+                    }
+                }
+            }
+        }
+    ]
+}
