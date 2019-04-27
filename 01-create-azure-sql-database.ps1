@@ -3,7 +3,7 @@
 #>## --------------------------- ###
 
 ### Login to Azure Account ###
-#Login-AzAccount
+Login-AzAccount
 
 # ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"

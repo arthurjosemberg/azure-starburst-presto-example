@@ -2,6 +2,9 @@
     Add Connectors on Starburst Presto on HdInsight Cluster
 #>## ---------------------------------------------------- ###
 
+### Login to Azure Account ###
+#Login-AzAccount
+
 # ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"
 

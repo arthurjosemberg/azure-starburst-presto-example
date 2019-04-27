@@ -5,6 +5,8 @@
 ### Login to Azure Account ###
 #Login-AzAccount 
 
+Get-Date -Format o
+
 # ALTERE O NOME DA SUBSCRIPTION
 $subcriptionName = "Microsoft Azure Sponsorship"
 

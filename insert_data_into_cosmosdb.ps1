@@ -1,3 +1,25 @@
+### Login to Azure Account ###
+#Login-AzAccount
+
+# ALTERE O NOME DA SUBSCRIPTION
+$subcriptionName = "Microsoft Azure Sponsorship"
+
+# CosmosDb Variables
+$cosmosdbAccountName = "dataslightcdb"
+$resourceGroupName = "bigdatargn"
+$collectionName = "product"
+$cosmosDbConnectionHost = "$cosmosdbAccountName.documents.azure.com:10255/$collectionName"
+
+# Set subscription 
+Set-AzContext -SubscriptionName $subcriptionName
+
+# Get Azure CosmosDB Account Key
+$securetyKey = Get-CosmosDbAccountMasterKey -Name $cosmosdbAccountName -ResourceGroupName $resourceGroupName -MasterKeyType "PrimaryMasterKey"
+$BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($securetyKey)
+$key = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
+
+mongo $cosmosDbConnectionHost -u $cosmosdbAccountName -p $key --ssl --sslAllowInvalidCertificates
+
 db.product.insert({ "ProductID":680, "Name":"HL Road Frame - Black, 58","ProductNumber":"FR-R92B-58","Color":"Black","StandardCost":1059.31,"ListPrice":1431.50,"ProductCategoryID":"18"})
 db.product.insert({ "ProductID":706, "Name":"HL Road Frame - Red, 58","ProductNumber":"FR-R92R-58","Color":"Red","StandardCost":1059.31,"ListPrice":1431.50,"ProductCategoryID":"18"})
 db.product.insert({ "ProductID":707, "Name":"Sport-100 Helmet, Red","ProductNumber":"HL-U509-R","Color":"Red","StandardCost":13.09,"ListPrice":34.99,"ProductCategoryID":"35"})
@@ -292,4 +314,6 @@ db.product.insert({ "ProductID":995, "Name":"ML Bottom Bracket","ProductNumber":
 db.product.insert({ "ProductID":996, "Name":"HL Bottom Bracket","ProductNumber":"BB-9108","StandardCost":53.94,"ListPrice":121.49,"ProductCategoryID":"9"})
 db.product.insert({ "ProductID":997, "Name":"Road-750 Black, 44","ProductNumber":"BK-R19B-44","Color":"Black","StandardCost":343.65,"ListPrice":539.99,"ProductCategoryID":"6"})
 db.product.insert({ "ProductID":998, "Name":"Road-750 Black, 48","ProductNumber":"BK-R19B-48","Color":"Black","StandardCost":343.65,"ListPrice":539.99,"ProductCategoryID":"6"})
-db.product.insert({ "ProductID":999, "Name":"Road-750 Black, 52","ProductNumber":"BK-R19B-52","Color":"Black","StandardCost":343.65,"ListPrice":539.99,"ProductCategoryID":"6"})
+db.product.insert({ "ProductID":999, "Name":"Road-750 Black, 52","ProductNumber":"BK-R19B-52","Color":"Black","StandardCost":343.65,"ListPrice":539.99,"ProductCategoryID":"6")
+
+quit()

@@ -9,14 +9,14 @@
 $subcriptionName = "Microsoft Azure Sponsorship"
 
 # ALTERE O DIRETORIO ONDE OS ARQUIVOS IRÃO FICAR
-$configurationFilesDirectory = "/Users/arthurluz/OneDrive/personal_studies/azure_hdinsight/files/starburst_presto"
+$configurationFilesDirectory = "/Users/arthurluz/OneDrive/dataslight"
 
 ### Create Variables ###
 $resourceGroupName = "bigdatargn"
 $storageAccountName = "storage$resourceGroupName"
 $containerName = "starburstpresto"
 $location = "West US"
-$fileLocation1 = "$configurationFilesDirectory/presto-connectors.zip"
+$fileLocation1 = "$configurationFilesDirectory/starburst_presto/presto-connectors.zip"
 $fileLocation2 = "$configurationFilesDirectory/adventureworks_oltp_files/SalesOrderDetail.csv"
 
 # Set subscription 

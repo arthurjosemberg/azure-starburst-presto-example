@@ -15,7 +15,7 @@
             "value": "westus"
         },
         "clusterWorkerNodeCount": {
-            "value": 1
+            "value": 4
         },
         "clusterKind": {
             "value": "HADOOP"
